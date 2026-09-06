@@ -33,6 +33,7 @@ requirements:
     - setuptools
   run:
     - python
+    - setuptools
 
 tests:
   - python:
@@ -41,6 +42,7 @@ tests:
   - requirements:
       run:
         - python
+        - setuptools
     script:
       - if: not win
         then: whitebox_tools --help
